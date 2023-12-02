@@ -15,13 +15,12 @@ import serial.tools.list_ports as list_ports
 
 from datetime import datetime
 
-file_name = 'trail_2.txt'
+file_name = 'Jessi-ex.txt'
 record_time = 10 # length of the trail in second
 
 # set up the serial line
 
 
-serialPort = serial.Serial('COM3', 57600)
 usingPorts = list(list_ports.comports())
 for port in usingPorts:
     #debug to detect Serial name
@@ -36,7 +35,7 @@ for port in usingPorts:
             serialPort = port.device
             break
 
-ser = serial.Serial(serialPort, 57600)
+ser = serial.Serial('/dev/cu.usbmodem1101', 57600)
 time.sleep(3)
 
 

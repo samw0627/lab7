@@ -8,7 +8,7 @@ Lab 7
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = np.loadtxt('trail_1.txt')
+data = np.loadtxt('Jessi.txt')
 
 def moving_average_filter(signal, k):
     signal_pad = np.zeros(len(signal)+k)

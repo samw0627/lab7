@@ -9,7 +9,7 @@ Lab 7
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = np.loadtxt('trail_1.txt')
+data = np.loadtxt('Jessi.txt')
 
 def exponential_decay_filter(signal, alpha):
 
